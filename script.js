@@ -1,3 +1,22 @@
+
+const temp=setTimeout(function(){
+
+    document.getElementById('introcard').style.display="flex";
+    document.getElementById('maincard').style.display="none";
+
+},0);
+
+setTimeout(function(){
+    clearTimeout(temp);
+    document.getElementById('introcard').style.display="none";
+    document.getElementById('maincard').style.display="block";
+},3000)
+
+
+
+
+
+
 /* button logic */
 let csl = 0;
 
@@ -154,5 +173,8 @@ document.getElementById("five-link").addEventListener("click",function(){
 })
 
 
-
-
+ let x = ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10"];
+ for (let i = 0; i < x.length; i++) {
+    document.getElementById(x[i]).style.fontSize="35px";
+ }
+ 
